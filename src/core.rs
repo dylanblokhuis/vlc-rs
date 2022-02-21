@@ -32,6 +32,7 @@ pub struct Instance {
 }
 
 unsafe impl Send for Instance {}
+unsafe impl Sync for Instance {}
 
 impl Instance {
     /// Create and initialize a libvlc instance with specified args.

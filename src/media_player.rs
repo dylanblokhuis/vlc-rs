@@ -16,6 +16,7 @@ pub struct MediaPlayer {
 }
 
 unsafe impl Send for MediaPlayer {}
+unsafe impl Sync for MediaPlayer {}
 
 impl MediaPlayer {
     /// Create an empty Media Player object

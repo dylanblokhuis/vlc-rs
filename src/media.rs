@@ -13,6 +13,7 @@ pub struct Media {
 }
 
 unsafe impl Send for Media {}
+unsafe impl Sync for Media {}
 
 impl Media {
     /// Create a media with a certain given media resource location, for instance a valid URL.
